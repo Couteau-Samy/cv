@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family: Comfortaa , cursive;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    
+   
+}
+
+header span {
+    display: flex ;
+    
+    
+    padding: 2% ;
+    
+    
+}
+header #tete #FDP1 {
+    display: block ;
+     text-align: center ;
+    color: black;
+     margin-left: auto;
+  margin-right: auto;
+    
+    
+    
+    font-size: 5.5rem ;
+    letter-spacing: 2% ;
+}
+
+
+header nav {
+    display: flex ;
+    background-color: #8FC9C0;
+    padding-top: 1.5% ;
+    padding-bottom: 1.5% ;
+    justify-content: space-around ;
+    
+    
+}
+header nav .dir {
+    color: black;
+    font-size : 200% ;
+    text-align: center ;
+    text-shadow: 20% ;
+    padding-top: 0.8% ;
+    padding-left: 2% ;
+    padding-right: 2% ;
+    background-color: #F9E272;
+    margin-left: 2% ;
+    text-decoration: none ;
+     border-bottom: solid 5px ;
+    border-bottom-color: #F9E272 ; 
+      border-radius: 20px;
+  
+    transition: background-color 200ms linear, color 100ms linear , padding 200ms ease-in , font-size  200ms linear,border-radius 200ms linear ;
+
+}
+
+header nav .dir:hover {
+    font-size : 300% ;
+    color: white;
+    background-color: #97906B ;
+    padding: 1% ;
+    padding-left: 4% ;
+    padding-right: 4% ;
+    border-radius: 40px;
+    
+}
+
+
+
+header nav .pos {
+    border-bottom: solid 5px ;
+        font-size : 200% ;
+    padding: 0.8% ; 
+    padding-left: 2% ;
+    padding-right: 2% ;
+    color: white ;
+    background-color: #97906B ;
+    border-radius: 20px;
+    border-bottom-color: white;
+    
+}
+banner #pres {
+border-top: 5px solid ;
+    border-bottom: 5px solid ;
+   
+    border-color: #F9E272 ;
+    transition: background-color 200ms ease-in-out, color 100ms ease-in-out , padding 300ms ease-in-out /*, font-size 50ms ease-in-out */, border-bottom-color 200ms ease-in-out; 
+    
+}
+
+banner #pres:hover {
+   background-color: #97906B ; 
+   color: white ;
+    font-size: 150% ;
+}
+
+banner #pres:hover p {
+    
+    margin-left: 5% ;
+    margin-right: 5% ;
+    
+}
+
+banner div p{
+    font-size: 200%;
+    margin-top: 2% ;
+    margin-bottom: 2% ;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center ;
+    
+}
+
+
+#slider {
+    position: relative;
+   
+    height: 800px;
+    overflow: hidden;
+}
+
+#slides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    max-height: 100%;
+}
+
+#slides figure {
+    display: inline-block;
+    width: 100vw;
+    max-height: 100%;
+    margin: 0;
+}
+
+#slides figure img {
+    width: 100%;
+    height: 150%;
+    /*Centrer l'image verticalement si celle-ci ne peut être affichée totalement*/
+    position: relative;
+    top:60%;
+    transform: translateY(-50%);
+}
+
+#slides figure figcaption {
+    position: absolute;
+    top: 20%;
+    
+    padding: 5rem 0;
+    text-align: center;
+    width: 700px;
+    height: 500px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+
+banner #slider h1{
+    margin-top: -6% ;
+    font-size : 500% ;
+}
+
+banner #slider h3{
+    margin-top: 7% ;
+    font-size : 180% ;
+    margin-right: 4% ;
+    margin-left: 4% ;
+    line-height: 120% ;
+}
+
+banner #slider a {
+    
+    color: black;
+    font-size : 200% ;
+    padding: 0.8% ;
+    padding-left: 2% ;
+    padding-right: 2% ;
+    background-color: #F9E272;
+    margin-left: 2% ;
+    margin-top: 80% ;
+    text-decoration: none ;
+     border-bottom: solid 5px ;
+    border-bottom-color: #F9E272 ; 
+    border-radius: 20px;
+    transition: background-color 100ms ease-in-out, color 100ms ease-in-out, padding 200ms ease-in; 
+}
+
+banner #slider a:hover {
+    color: white ;
+    background-color: #97906B ;
+    padding: 2%;
+    
+}
+
+
+@keyframes slide {
+    0%, 20%, 100% {
+        left: 0; /*1ère image*/
+    }
+    35%, 50% {
+        left: -100vw; /*2ème image*/
+    }
+    70%, 95% {
+        left: -200vw; /*3ème image*/
+    }
+}
+
+#slides {
+    /*... Code précédent ...*/
+    /*CSS3 keyframes animation*/
+    animation-name: slide;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+#slides {
+    animation: slide 20s infinite ease-in-out forwards;
+}
+
+banner .cat {
+    display: flex ;
+    background-color: #8FC9C0;
+    padding-top: 1.5% ;
+    padding-bottom: 1.5% ;
+    justify-content: space-around ;
+     margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2% ;
+    
+}
+
+banner #exp h2{
+    text-align: right; 
+     margin-left: auto;
+  margin-right: auto;
+    margin-bottom: 2% ;
+    
+}
+
+banner #comp h2{
+    text-align: right; 
+     margin-left: auto;
+  margin-right: auto;
+    margin-bottom: 2% ;
+    
+}
+
+
+banner #cont h2{
+    text-align: right; 
+     margin-left: auto;
+  margin-right: auto;
+    margin-bottom: 2% ;
+    
+}
+
+footer p {
+    text-align: center ;
+    margin: auto ;
+}
+
+banner .cat  .vp {
+    position: absolute ;
+    background-color: grey ;
+    padding: 1.5% ;
+    opacity: 0% ;
+    transition: opacity 150ms ease-in ;
+}
+
+banner .cat:hover .vp{
+    
+    opacity: 100% ;
+    
+}
